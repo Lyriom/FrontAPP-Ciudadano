@@ -43,6 +43,9 @@ export const reporteService = {
   // Obtener reportes por estado
   obtenerReportesPorEstado: (estado) => 
     api.get(`/reportes/estado/${estado}`),
+  
+  obtenerReportesPorUsuario: (id) => api.get(`/reportes/usuario/${id}`),
+
 };
 
 export default api;
